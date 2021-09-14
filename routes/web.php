@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>始まりのページ</h1>';
 });
+
+Route::get('comments/{time}', [App\Http\Controllers\GreetController::class, 'greet']);
