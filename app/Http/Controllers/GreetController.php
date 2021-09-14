@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class GreetController extends Controller
 {
     public function greet($time) {
-    $array = ['おはようございます','こんにちは','こんばんは','おやすみ'];
+    $array = ['おはようございます', 'こんにちは', 'こんばんは', 'おやすみ'];
     if ($time == 'morning') {
             $title = '朝のあいさつ';
             $greet = 'おはようございます';
